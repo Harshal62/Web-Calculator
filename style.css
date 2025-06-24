@@ -96,4 +96,34 @@ body {
            width: 30px;
            height: 30px;
            object-fit: contain;
+            }
+@media (max-width: 500px) {
+    .calculator {
+        transform: scale(1);      /* Cancel scaling on small devices */
+        width: 90vw;              /* Width responsive to screen */
+        padding: 15px;
+    }
+
+    .display {
+        font-size: 1.5em;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    .header {
+        font-size: 1.2em;
+        top: 5px;
+        left: 10px;
+    }
+
+    .footer {
+        font-size: 0.9em;
+        bottom: 5px;
+    }
 }
+
