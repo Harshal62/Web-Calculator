@@ -29,6 +29,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 90vw;
+    width: 300px; /* Fixed width to ensure consistent centering */
+    margin: 0 auto; /* Additional centering fallback */
 }
 
 .display {
@@ -112,6 +114,7 @@ button:active {
 @media (max-width: 500px) {
     .calculator {
         max-width: 90vw;
+        width: auto; /* Allow full width on small screens */
         padding: 15px;
     }
 
